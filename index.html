@@ -11,6 +11,7 @@ body{
   font-family:Arial;
   color:white;
 
+  /* ФОН PNG */
   background:
     linear-gradient(rgba(6,24,39,0.6), rgba(6,24,39,0.9)),
     url("images/bg.png");
@@ -28,6 +29,7 @@ body{
   text-align:center;
 }
 
+/* ЛОГО JPG */
 .logo{
   width:110px;
   height:110px;
@@ -35,6 +37,7 @@ body{
   overflow:hidden;
   margin:0 auto 15px;
   border:2px solid rgba(255,255,255,0.6);
+  box-shadow:0 0 25px rgba(0,188,212,0.4);
 }
 
 .logo img{
@@ -54,6 +57,7 @@ h1{
   font-size:14px;
 }
 
+/* КНОПКИ */
 .btn{
   display:block;
   margin-bottom:14px;
@@ -62,23 +66,40 @@ h1{
   text-decoration:none;
   color:white;
   font-weight:bold;
+  font-size:15px;
+  backdrop-filter: blur(10px);
+  transition:0.2s;
 }
 
+.btn:hover{
+  transform:scale(1.03);
+}
+
+/* кухня */
 .btn.kitchen{
   background: linear-gradient(135deg, #00bcd4, #007c91);
 }
 
+/* бар */
 .btn.bar{
   background: linear-gradient(135deg, #ff7a00, #b94d00);
 }
 
+/* адрес */
 .btn.map{
   background: rgba(255,255,255,0.15);
   border: 1px solid rgba(255,255,255,0.25);
 }
 
+/* ватсап */
 .btn.whatsapp{
   background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.footer{
+  margin-top:30px;
+  font-size:12px;
+  color:#aaa;
 }
 </style>
 
@@ -88,17 +109,27 @@ h1{
 
 <div class="container">
 
+  <!-- ЛОГО -->
   <div class="logo">
-    <img src="images/logo.jpg">
+    <img src="images/logo.jpg" alt="logo">
   </div>
 
   <h1>Бассейн Жанна</h1>
   <div class="subtitle">Бассейн • Бар • Кухня • Кальян</div>
 
+  <!-- КНОПКИ -->
   <a class="btn kitchen" href="kitchen.html">🍽 Меню кухни</a>
   <a class="btn bar" href="bar.html">🍹 Меню бара</a>
-  <a class="btn map" href="#">📍 Адрес</a>
-  <a class="btn whatsapp" href="https://wa.me/77776260692?text=Здравствуйте!%20Хочу%20забронировать%20стол/место%20в%20бассейне.%20Дата:Сегодня%20___%20Время:%20___%20Кол-во%20человек:%20___">💬 Забронировать</a>
+  <a class="btn map" href="https://2gis.kz">📍 Адрес</a>
+
+  <!-- ВАТСАП С ГОТОВЫМ ТЕКСТОМ -->
+  <a class="btn whatsapp" href="https://wa.me/77776260692?text=Здравствуйте!%20Хочу%20забронировать%20место%20в%20бассейне.%20Дата:%20___%20Время:%20___%20Кол-во%20человек:%20___">
+    🟢 Написать в WhatsApp
+  </a>
+
+  <div class="footer">
+    Тараз • Работаем 10:00 — 01:00
+  </div>
 
 </div>
 
