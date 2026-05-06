@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Бассейн Жанна</title>
 
 <style>
-html, body{
+
+html{
   margin:0;
   padding:0;
-  width:100%;
-  min-height:100%;
-  background:#061827;
+
+  /* ЦЕЛЬНЫЙ ФОН */
+  background:
+    url("images/bg.png") center top / cover no-repeat fixed;
 }
 
 body{
+  margin:0;
+  padding:0;
   font-family:Arial;
   color:white;
-  min-height:100vh;
-  min-height:100dvh;
 
+  /* затемнение */
   background:
-    linear-gradient(rgba(6,24,39,0.6), rgba(6,24,39,0.9)),
-    url("images/bg.png");
+    linear-gradient(rgba(6,24,39,0.6), rgba(6,24,39,0.9));
 
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
+  min-height:100vh;
 }
 
 .container{
   max-width:500px;
-  min-height:100vh;
-  min-height:100dvh;
   margin:auto;
   padding:40px 20px;
   text-align:center;
   box-sizing:border-box;
 }
 
+/* ЛОГО */
 .logo{
   width:110px;
   height:110px;
@@ -66,6 +66,7 @@ h1{
   font-size:14px;
 }
 
+/* КНОПКИ */
 .btn{
   display:block;
   margin-bottom:14px;
@@ -84,23 +85,28 @@ h1{
   transform:scale(1.03);
 }
 
+/* кухня */
 .btn.kitchen{
   background: linear-gradient(135deg, #00bcd4, #007c91);
 }
 
+/* бар */
 .btn.bar{
   background: linear-gradient(135deg, #ff7a00, #b94d00);
 }
 
+/* адрес */
 .btn.map{
   background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.25);
+  border:1px solid rgba(255,255,255,0.25);
 }
 
+/* ватсап */
 .btn.whatsapp{
   background: linear-gradient(135deg, #25D366, #128C7E);
 }
 
+/* тикток */
 .btn.tiktok{
   background:#000000;
 }
@@ -110,6 +116,7 @@ h1{
   font-size:12px;
   color:#aaa;
 }
+
 </style>
 </head>
 
@@ -117,28 +124,61 @@ h1{
 
 <div class="container">
 
+  <!-- ЛОГО -->
   <div class="logo">
     <img src="images/logo.jpg" alt="logo">
   </div>
 
   <h1>Бассейн Жанна</h1>
-  <div class="subtitle">Бассейн • Бар • Кухня • Кальян</div>
+  <div class="subtitle">
+    Бассейн • Бар • Кухня • Кальян
+  </div>
 
-  <a class="btn kitchen" href="kitchen.html">🍽 Меню кухни</a>
-  <a class="btn bar" href="bar.html">🍹 Меню бара</a>
-  <a class="btn map" href="https://2gis.kz/taraz/geo/70000001052964577">📍 Адрес</a>
+  <!-- КНОПКИ -->
 
-  <a class="btn whatsapp" href="https://wa.me/77776260692?text=Здравствуйте!%20Хочу%20забронировать%20место">
-    <svg width="20" height="20" viewBox="0 0 32 32" fill="white" style="vertical-align:middle; margin-right:8px;">
+  <a class="btn kitchen" href="kitchen.html">
+    🍽 Меню кухни
+  </a>
+
+  <a class="btn bar" href="bar.html">
+    🍹 Меню бара
+  </a>
+
+  <a class="btn map"
+     href="https://2gis.kz/taraz/geo/70000001052964577">
+    📍 Адрес
+  </a>
+
+  <!-- WHATSAPP -->
+  <a class="btn whatsapp"
+     href="https://wa.me/77776260692?text=Здравствуйте!%20Хочу%20забронировать%20место">
+
+    <svg width="20"
+         height="20"
+         viewBox="0 0 32 32"
+         fill="white"
+         style="vertical-align:middle; margin-right:8px;">
+
       <path d="M16 .4C7.3.4.3 7.4.3 16c0 2.8.7 5.5 2.1 7.9L0 32l8.3-2.4c2.3 1.3 4.9 2 7.7 2 8.7 0 15.7-7 15.7-15.6S24.7.4 16 .4zm0 28.4c-2.4 0-4.7-.6-6.8-1.8l-.5-.3-4.9 1.4 1.3-4.8-.3-.5C3.5 20.8 2.9 18.5 2.9 16c0-7.2 5.9-13.1 13.1-13.1S29.1 8.8 29.1 16 23.2 28.8 16 28.8zm7.2-9.7c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.7-.2-1 .2-.3.4-1.1 1.3-1.3 1.6-.2.2-.5.3-.9.1-.4-.2-1.7-.6-3.2-1.9-1.2-1-2-2.2-2.3-2.6-.2-.4 0-.6.2-.8.2-.2.4-.5.6-.7.2-.2.3-.4.4-.6.1-.2 0-.5 0-.7 0-.2-1-2.5-1.4-3.4-.4-.9-.7-.8-1-.8h-.8c-.3 0-.7.1-1 .5-.4.4-1.5 1.5-1.5 3.6 0 2.1 1.5 4.1 1.7 4.4.2.3 3 4.6 7.3 6.4 1 .4 1.8.7 2.4.9 1 .3 1.9.2 2.6.1.8-.1 2.4-1 2.7-2 .3-1 .3-1.9.2-2-.1-.1-.3-.2-.7-.4z"/>
     </svg>
+
     Написать в WhatsApp
   </a>
 
-  <a class="btn tiktok" href="https://www.tiktok.com/@bassein.zhanna.taraz?_r=1&_t=ZS-967XVGkjIKz" target="_blank">
-    <svg width="20" height="20" viewBox="0 0 48 48" fill="white" style="vertical-align:middle; margin-right:8px;">
+  <!-- TIKTOK -->
+  <a class="btn tiktok"
+     href="https://www.tiktok.com/@bassein.zhanna.taraz?_r=1&_t=ZS-967XVGkjIKz"
+     target="_blank">
+
+    <svg width="20"
+         height="20"
+         viewBox="0 0 48 48"
+         fill="white"
+         style="vertical-align:middle; margin-right:8px;">
+
       <path d="M41 16.5c-4.1 0-7.8-2.3-9.7-5.8v19.7c0 6.4-5.2 11.6-11.6 11.6S8 36.8 8 30.4s5.2-11.6 11.6-11.6c.7 0 1.4.1 2.1.2v6.3c-.7-.3-1.4-.4-2.1-.4-3.1 0-5.6 2.5-5.6 5.6s2.5 5.6 5.6 5.6 5.6-2.5 5.6-5.6V0h6.1c.3 5 4.3 9 9.3 9v7.5z"/>
     </svg>
+
     TikTok
   </a>
 
