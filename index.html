@@ -6,33 +6,36 @@
 <title>Бассейн Жанна</title>
 
 <style>
+
 *{
   box-sizing:border-box;
 }
 
-html, body{
+html,
+body{
   margin:0;
   padding:0;
   width:100%;
   min-height:100%;
   overflow-x:hidden;
+
   font-family:Arial;
   color:white;
-  background:#061827;
 }
 
-/* ФОН ВСЕГДА НА ВЕСЬ ЭКРАН */
+/* ФОН */
 .bg{
   position:fixed;
-  top:0;
-  left:0;
+  inset:0;
+
   width:100vw;
   height:100vh;
   height:100dvh;
-  z-index:-2;
+
+  z-index:-1;
 
   background:
-    linear-gradient(rgba(6,24,39,0.6), rgba(6,24,39,0.9)),
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.45)),
     url("images/bg.png");
 
   background-size:cover;
@@ -40,31 +43,28 @@ html, body{
   background-repeat:no-repeat;
 }
 
-/* чтобы при прокрутке тоже был фон */
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-  background:#061827;
-  z-index:-3;
-}
-
+/* КОНТЕЙНЕР */
 .container{
   max-width:500px;
-  min-height:100vh;
-  min-height:100dvh;
+
   margin:auto;
   padding:40px 20px;
+
   text-align:center;
 }
 
+/* ЛОГО */
 .logo{
   width:110px;
   height:110px;
+
   border-radius:50%;
   overflow:hidden;
+
   margin:0 auto 15px;
+
   border:2px solid rgba(255,255,255,0.6);
+
   box-shadow:0 0 25px rgba(0,188,212,0.4);
 }
 
@@ -74,6 +74,7 @@ body::after{
   object-fit:cover;
 }
 
+/* ЗАГОЛОВОК */
 h1{
   margin:10px 0;
   font-size:28px;
@@ -85,74 +86,106 @@ h1{
   font-size:14px;
 }
 
+/* КНОПКИ */
 .btn{
   display:block;
+
   margin-bottom:14px;
   padding:16px;
+
   border-radius:14px;
+
   text-decoration:none;
   color:white;
+
   font-weight:bold;
   font-size:15px;
+
   backdrop-filter:blur(10px);
 }
 
+/* КУХНЯ */
 .btn.kitchen{
   background:linear-gradient(135deg, #00bcd4, #007c91);
 }
 
+/* БАР */
 .btn.bar{
   background:linear-gradient(135deg, #ff7a00, #b94d00);
 }
 
+/* АДРЕС */
 .btn.map{
   background:rgba(255,255,255,0.15);
   border:1px solid rgba(255,255,255,0.25);
 }
 
+/* WHATSAPP */
 .btn.whatsapp{
   background:linear-gradient(135deg, #25D366, #128C7E);
 }
 
+/* TIKTOK */
 .btn.tiktok{
   background:#000;
 }
 
+/* FOOTER */
 .footer{
   margin-top:30px;
   font-size:12px;
   color:#aaa;
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- ФОН -->
 <div class="bg"></div>
 
 <div class="container">
 
+  <!-- ЛОГО -->
   <div class="logo">
     <img src="images/logo.jpg" alt="logo">
   </div>
 
+  <!-- ТЕКСТ -->
   <h1>Бассейн Жанна</h1>
-  <div class="subtitle">Бассейн • Бар • Кухня • Кальян</div>
 
-  <a class="btn kitchen" href="kitchen.html">🍽 Меню кухни</a>
+  <div class="subtitle">
+    Бассейн • Бар • Кухня • Кальян
+  </div>
 
-  <a class="btn bar" href="bar.html">🍹 Меню бара</a>
+  <!-- КНОПКИ -->
 
-  <a class="btn map" href="https://2gis.kz/taraz/geo/70000001052964577">📍 Адрес</a>
+  <a class="btn kitchen" href="kitchen.html">
+    🍽 Меню кухни
+  </a>
 
-  <a class="btn whatsapp" href="https://wa.me/77776260692?text=Здравствуйте!%20Хочу%20забронировать%20место">
+  <a class="btn bar" href="bar.html">
+    🍹 Меню бара
+  </a>
+
+  <a class="btn map"
+     href="https://2gis.kz/taraz/geo/70000001052964577">
+    📍 Адрес
+  </a>
+
+  <a class="btn whatsapp"
+     href="https://wa.me/77776260692?text=Здравствуйте!%20Хочу%20забронировать%20место">
     💬 Написать в WhatsApp
   </a>
 
-  <a class="btn tiktok" href="https://www.tiktok.com/@bassein.zhanna.taraz?_r=1&_t=ZS-967XVGkjIKz" target="_blank">
+  <a class="btn tiktok"
+     href="https://www.tiktok.com/@bassein.zhanna.taraz?_r=1&_t=ZS-967XVGkjIKz"
+     target="_blank">
     TikTok
   </a>
 
+  <!-- FOOTER -->
   <div class="footer">
     Тараз • Работаем 10:00 — 01:00
   </div>
