@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню бара</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+            color: white;
+            background: #061827;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(rgba(6,24,39,0.6), rgba(6,24,39,0.9)), url("images/bg.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 520px;
+            margin: auto;
+            padding: 25px 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #ffb36b;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+
+        /* КАТЕГОРИИ */
+        .category {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #ffb36b;
+        }
+
+        /* КАРТОЧКА */
+        .card {
+            display: flex;
+            gap: 12px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 14px;
+            padding: 10px;
+            margin-bottom: 12px;
+            align-items: center;
+        }
+
+            .card img {
+                width: 70px;
+                height: 70px;
+                border-radius: 12px;
+                object-fit: cover;
+            }
+
+        .info {
+            flex: 1;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .desc {
+            font-size: 12px;
+            color: #ccc;
+            margin-top: 3px;
+        }
+
+        .price {
+            color: #ffb36b;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🍹 Меню бара</h1>
+        <div class="subtitle">Лимонады • Смузи • Коктейли</div>
+
+        <!-- ЛИМОНАДЫ -->
+        <div class="category">🍋 Лимонады</div>
+
+        <div class="card">
+            <img src="images/lemon1.jpg">
+            <div class="info">
+                <div class="name">Классический лимонад</div>
+                <div class="desc">Лимон, мята, лёд</div>
+            </div>
+            <div class="price">1200₸</div>
+        </div>
+
+        <div class="card">
+            <img src="images/lemon2.jpg">
+            <div class="info">
+                <div class="name">Клубничный лимонад</div>
+                <div class="desc">Клубника, сироп, сода</div>
+            </div>
+            <div class="price">1400₸</div>
+        </div>
+
+        <!-- СМУЗИ -->
+        <div class="category">🥤 Смузи</div>
+
+        <div class="card">
+            <img src="images/smoothie1.jpg">
+            <div class="info">
+                <div class="name">Банановый смузи</div>
+                <div class="desc">Банан, молоко, мёд</div>
+            </div>
+            <div class="price">1600₸</div>
+        </div>
+
+        <div class="card">
+            <img src="images/smoothie2.jpg">
+            <div class="info">
+                <div class="name">Ягодный смузи</div>
+                <div class="desc">Малина, черника, йогурт</div>
+            </div>
+            <div class="price">1700₸</div>
+        </div>
+
+        <!-- КОКТЕЙЛИ -->
+        <div class="category">🍸 Коктейли</div>
+
+        <div class="card">
+            <img src="images/cocktail1.jpg">
+            <div class="info">
+                <div class="name">Mojito</div>
+                <div class="desc">Мята, лайм, ром</div>
+            </div>
+            <div class="price">1800₸</div>
+        </div>
+
+        <div class="card">
+            <img src="images/cocktail2.jpg">
+            <div class="info">
+                <div class="name">Blue Lagoon</div>
+                <div class="desc">Водка, ликёр, лимонад</div>
+            </div>
+            <div class="price">1900₸</div>
+        </div>
+
+    </div>
+
+</body>
+</html>
