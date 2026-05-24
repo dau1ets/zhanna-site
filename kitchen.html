@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Меню кухни</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    color: white;
+    background: #061827;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(rgba(6,24,39,0.6), rgba(6,24,39,0.9)),
+    url("images/bg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 520px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #7de3ff;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.category {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #7de3ff;
+}
+
+.card {
+    display: flex;
+    gap: 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+.card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.price {
+    color: #7de3ff;
+    font-weight: bold;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🍽 MENU КУХНИ</h1>
+<div class="subtitle">POOL LOUNGE</div>
+
+<!-- САЛАТЫ -->
+<div class="category">🥗 Салаты</div>
+
+<div class="card">
+    <img src="images/caesar.jpg">
+    <div class="info">
+        <div class="name">Цезарь с курицей</div>
+    </div>
+    <div class="price">2400₸</div>
+</div>
+
+<div class="card">
+    <img src="images/eggplant.jpg">
+    <div class="info">
+        <div class="name">Хрустящие баклажаны</div>
+    </div>
+    <div class="price">2200₸</div>
+</div>
+
+<div class="card">
+    <img src="images/mensalad.jpg">
+    <div class="info">
+        <div class="name">Мужской каприз</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/achuk.jpg">
+    <div class="info">
+        <div class="name">Ачучук</div>
+    </div>
+    <div class="price">1000₸</div>
+</div>
+
+<div class="card">
+    <img src="images/freshsalad.jpg">
+    <div class="info">
+        <div class="name">Свежий салат</div>
+    </div>
+    <div class="price">1000₸</div>
+</div>
+
+
+<!-- ГОРЯЧИЕ БЛЮДА -->
+<div class="category">🍝 Горячие блюда</div>
+
+<div class="card">
+    <img src="images/alfredo.jpg">
+    <div class="info">
+        <div class="name">Альфредо</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/befstroganov.jpg">
+    <div class="info">
+        <div class="name">Бефстроганов</div>
+    </div>
+    <div class="price">2400₸</div>
+</div>
+
+<div class="card">
+    <img src="images/kuyrdak.jpg">
+    <div class="info">
+        <div class="name">Куырдак из конины</div>
+    </div>
+    <div class="price">3000₸</div>
+</div>
+
+<div class="card">
+    <img src="images/frikase.jpg">
+    <div class="info">
+        <div class="name">Фрикассе</div>
+    </div>
+    <div class="price">2300₸</div>
+</div>
+
+<div class="card">
+    <img src="images/derevenskiy.jpg">
+    <div class="info">
+        <div class="name">Картошка по-деревенски</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/thai.jpg">
+    <div class="info">
+        <div class="name">Мясо по-тайски</div>
+    </div>
+    <div class="price">2000₸</div>
+</div>
+
+<div class="card">
+    <img src="images/sazan.jpg">
+    <div class="info">
+        <div class="name">Жареный сазан</div>
+    </div>
+    <div class="price">3000₸</div>
+</div>
+
+
+<!-- ПЕРВЫЕ БЛЮДА -->
+<div class="category">🍲 Первые блюда</div>
+
+<div class="card">
+    <img src="images/shorpa.jpg">
+    <div class="info">
+        <div class="name">Шорпа из баранины</div>
+    </div>
+    <div class="price">1500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/okroshka.jpg">
+    <div class="info">
+        <div class="name">Окрошка</div>
+    </div>
+    <div class="price">1500₸</div>
+</div>
+
+
+<!-- ПИЦЦА -->
+<div class="category">🍕 Пицца</div>
+
+<div class="card">
+    <img src="images/margarita.jpg">
+    <div class="info">
+        <div class="name">Маргарита</div>
+    </div>
+    <div class="price">2000₸</div>
+</div>
+
+<div class="card">
+    <img src="images/bbq.jpg">
+    <div class="info">
+        <div class="name">BBQ</div>
+    </div>
+    <div class="price">2300₸</div>
+</div>
+
+<div class="card">
+    <img src="images/pepperoni.jpg">
+    <div class="info">
+        <div class="name">Пепперони</div>
+    </div>
+    <div class="price">2300₸</div>
+</div>
+
+<div class="card">
+    <img src="images/julien.jpg">
+    <div class="info">
+        <div class="name">Жульен</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/bolognese.jpg">
+    <div class="info">
+        <div class="name">Болоньезе</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/4season.jpg">
+    <div class="info">
+        <div class="name">Четыре сезона</div>
+    </div>
+    <div class="price">2200₸</div>
+</div>
+
+<div class="card">
+    <img src="images/cheesebort.jpg">
+    <div class="info">
+        <div class="name">Сырный бортик</div>
+    </div>
+    <div class="price">700₸</div>
+</div>
+
+
+<!-- ГАРНИРЫ -->
+<div class="category">🍟 Гарниры</div>
+
+<div class="card">
+    <img src="images/fries.jpg">
+    <div class="info">
+        <div class="name">Картофель фри</div>
+    </div>
+    <div class="price">800₸</div>
+</div>
+
+<div class="card">
+    <img src="images/rice.jpg">
+    <div class="info">
+        <div class="name">Рис</div>
+    </div>
+    <div class="price">700₸</div>
+</div>
+
+<div class="card">
+    <img src="images/puree.jpg">
+    <div class="info">
+        <div class="name">Пюре</div>
+    </div>
+    <div class="price">700₸</div>
+</div>
+
+<div class="card">
+    <img src="images/wedges.jpg">
+    <div class="info">
+        <div class="name">Картофельные дольки</div>
+    </div>
+    <div class="price">890₸</div>
+</div>
+
+
+<!-- СОУСЫ -->
+<div class="category">🥫 Соусы</div>
+
+<div class="card">
+    <img src="images/tartar.jpg">
+    <div class="info">
+        <div class="name">Тар-тар</div>
+    </div>
+    <div class="price">300₸</div>
+</div>
+
+<div class="card">
+    <img src="images/bbqsauce.jpg">
+    <div class="info">
+        <div class="name">Барбекю</div>
+    </div>
+    <div class="price">400₸</div>
+</div>
+
+<div class="card">
+    <img src="images/ketchup.jpg">
+    <div class="info">
+        <div class="name">Кетчуп</div>
+    </div>
+    <div class="price">300₸</div>
+</div>
+
+<div class="card">
+    <img src="images/sweetchili.jpg">
+    <div class="info">
+        <div class="name">Кисло-сладкий / Sweet Chili</div>
+    </div>
+    <div class="price">400₸</div>
+</div>
+
+
+<!-- БЛЮДА ДЛЯ КОМПАНИИ -->
+<div class="category">👨‍🍳 Блюда для компании</div>
+
+<div class="card">
+    <img src="images/companydish.jpg">
+    <div class="info">
+        <div class="name">Куырдак в тесте с кониной</div>
+    </div>
+    <div class="price">10000₸</div>
+</div>
+
+
+<!-- СУШИ -->
+<div class="category">🍣 Суши</div>
+
+<div class="card">
+    <img src="images/americano.jpg">
+    <div class="info">
+        <div class="name">Американо</div>
+    </div>
+    <div class="price">2800₸</div>
+</div>
+
+<div class="card">
+    <img src="images/caesarroll.jpg">
+    <div class="info">
+        <div class="name">Ролл «Цезарь»</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/philadelphia.jpg">
+    <div class="info">
+        <div class="name">Филадельфия</div>
+    </div>
+    <div class="price">2800₸</div>
+</div>
+
+<div class="card">
+    <img src="images/bakedroll.jpg">
+    <div class="info">
+        <div class="name">Запечённые роллы</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/friedshrimp.jpg">
+    <div class="info">
+        <div class="name">Жареные роллы с креветками</div>
+    </div>
+    <div class="price">3000₸</div>
+</div>
+
+
+<!-- ПИВНЫЕ ЗАКУСКИ -->
+<div class="category">🍺 Пивные закуски</div>
+
+<div class="card">
+    <img src="images/beerset.jpg">
+    <div class="info">
+        <div class="name">Пивной сет</div>
+    </div>
+    <div class="price">5500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/russian.jpg">
+    <div class="info">
+        <div class="name">Русская нарезка</div>
+    </div>
+    <div class="price">2500₸</div>
+</div>
+
+<div class="card">
+    <img src="images/shrimps.jpg">
+    <div class="info">
+        <div class="name">Пивные креветки</div>
+    </div>
+    <div class="price">3200₸</div>
+</div>
+
+
+<!-- ШАШЛЫКИ -->
+<div class="category">🔥 Шашлыки</div>
+
+<div class="card">
+    <img src="images/lamb.jpg">
+    <div class="info">
+        <div class="name">Шашлык Баранина</div>
+    </div>
+    <div class="price">1300₸</div>
+</div>
+
+<div class="card">
+    <img src="images/lulya.jpg">
+    <div class="info">
+        <div class="name">Шашлык Люля</div>
+    </div>
+    <div class="price">1200₸</div>
+</div>
+
+<div class="card">
+    <img src="images/duck.jpg">
+    <div class="info">
+        <div class="name">Шашлык Утиный</div>
+    </div>
+    <div class="price">1000₸</div>
+</div>
+
+<div class="card">
+    <img src="images/okorochka.jpg">
+    <div class="info">
+        <div class="name">Шашлык Окорочка</div>
+    </div>
+    <div class="price">800₸</div>
+</div>
+
+<div class="card">
+    <img src="images/rulet.jpg">
+    <div class="info">
+        <div class="name">Шашлык Рулет</div>
+    </div>
+    <div class="price">1200₸</div>
+</div>
+
+<div class="card">
+    <img src="images/kapcheon.jpg">
+    <div class="info">
+        <div class="name">Шашлык Наполеон</div>
+    </div>
+    <div class="price">1200₸</div>
+</div>
+
+</div>
+
+</body>
+</html>
